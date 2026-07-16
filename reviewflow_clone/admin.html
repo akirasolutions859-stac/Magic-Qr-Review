@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReviewFlow AI | Admin Dashboard</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="index.css"> <!-- Re-use variables -->
+    <link rel="stylesheet" href="admin.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="admin-body">
+    
+    <!-- SIDEBAR -->
+    <aside class="admin-sidebar">
+        <div class="sidebar-header">
+            <a href="index.html" class="brand-link" style="padding: 1rem;">
+                <img src="https://reviewflowai.in/uploads/img/Review%20Flow%20AI%20Logo.png" alt="Logo" style="height: 28px;">
+            </a>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active"><i class="fa-solid fa-chart-pie"></i> Overview</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-star"></i> Reviews</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-users"></i> Customers</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Auto-Replies</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-qrcode"></i> QR Flyers</a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <a href="index.html" class="nav-item"><i class="fa-solid fa-arrow-right-from-bracket"></i> Exit Admin</a>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-main">
+        <!-- TOPBAR -->
+        <header class="admin-topbar">
+            <div class="topbar-search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search reviews, customers...">
+            </div>
+            <div class="topbar-actions">
+                <button class="icon-btn"><i class="fa-regular fa-bell"></i><span class="badge">3</span></button>
+                <div class="admin-profile">
+                    <img src="https://i.pravatar.cc/150?img=33" alt="Admin">
+                    <div class="profile-info">
+                        <strong>Admin User</strong>
+                        <span>Superadmin</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- DASHBOARD CONTENT -->
+        <div class="dashboard-content">
+            <div class="dashboard-header">
+                <div>
+                    <h1>Welcome back, Admin! 👋</h1>
+                    <p>Here is what's happening with your ReviewFlow platform today.</p>
+                </div>
+                <button class="btn btn-primary"><i class="fa-solid fa-download"></i> Export Report</button>
+            </div>
+            
+            <!-- STATS CARDS -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: var(--green-100); color: var(--green-600);"><i class="fa-solid fa-star"></i></div>
+                    <div class="stat-details">
+                        <h3>Total Reviews Managed</h3>
+                        <div class="stat-value">124,592 <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 12%</span></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #EFF6FF; color: #2563EB;"><i class="fa-solid fa-building"></i></div>
+                    <div class="stat-details">
+                        <h3>Active Businesses</h3>
+                        <div class="stat-value">10,402 <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 4%</span></div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background: #FFFBEB; color: #B45309;"><i class="fa-solid fa-robot"></i></div>
+                    <div class="stat-details">
+                        <h3>AI Replies Generated</h3>
+                        <div class="stat-value">845,210 <span class="trend up"><i class="fa-solid fa-arrow-up"></i> 28%</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECENT ACTIVITY TABLE -->
+            <div class="data-section">
+                <div class="data-header">
+                    <h2>Recent Reviews Processing</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <div class="table-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>Business</th>
+                                <th>Reviewer</th>
+                                <th>Rating</th>
+                                <th>Status</th>
+                                <th>AI Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Joe's Coffee</strong><br><span class="subtext">New York, NY</span></td>
+                                <td>Sarah Jenkins</td>
+                                <td><span class="stars">★★★★★</span></td>
+                                <td><span class="status-badge success">Auto-Replied</span></td>
+                                <td><button class="action-btn">View Reply</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Elite Plumbers</strong><br><span class="subtext">Austin, TX</span></td>
+                                <td>Mike R.</td>
+                                <td><span class="stars" style="color:var(--google-red)">★☆☆☆☆</span></td>
+                                <td><span class="status-badge warning">Needs Attention</span></td>
+                                <td><button class="action-btn primary">Draft Reply</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sunset Dental</strong><br><span class="subtext">Miami, FL</span></td>
+                                <td>Amanda C.</td>
+                                <td><span class="stars">★★★★★</span></td>
+                                <td><span class="status-badge pending">Pending AI</span></td>
+                                <td><button class="action-btn" disabled>Processing...</button></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Urban Fitness</strong><br><span class="subtext">Chicago, IL</span></td>
+                                <td>David W.</td>
+                                <td><span class="stars" style="color:var(--amber-500)">★★★★☆</span></td>
+                                <td><span class="status-badge success">Auto-Replied</span></td>
+                                <td><button class="action-btn">View Reply</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+</body>
+</html>

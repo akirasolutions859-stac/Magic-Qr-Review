@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReviewFlow AI | Grow Your Google Reviews Automatically</title>
+    
+    <!-- Standard SEO Tags -->
+    <meta name="description" content="Scale your Google rating automatically. Smart funnels, print-ready QR flyers, and human-like AI review draft assistants to boost local visibility.">
+            <meta name="keywords" content="Google Review Management, Review Management Software, AI Review Management, Review Funnel Software, QR Review Software">
+        <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://reviewflowai.in/">
+    
+    <!-- Favicon / Website Icon -->
+    <link rel="icon" type="image/jpeg" href="https://reviewflowai.in/uploads/img/icon.jpeg">
+    
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:site_name" content="ReviewFlow AI">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ReviewFlow AI | Grow Your Google Reviews Automatically">
+    <meta property="og:description" content="Scale your Google rating automatically. Smart funnels, print-ready QR flyers, and human-like AI review draft assistants to boost local visibility.">
+    <meta property="og:url" content="https://reviewflowai.in/">
+    <meta property="og:image" content="https://reviewflowai.in/assets/img/og-preview.png">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ReviewFlow AI | Grow Your Google Reviews Automatically">
+    <meta name="twitter:description" content="Scale your Google rating automatically. Smart funnels, print-ready QR flyers, and human-like AI review draft assistants to boost local visibility.">
+    <meta name="twitter:image" content="https://reviewflowai.in/assets/img/og-preview.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://reviewflowai.in/assets/css/style.css">
+    
+    <link rel="stylesheet" href="index.css">
+    
+    <!-- Schema Markup JSON-LD -->
+    </head>
+<body>
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- ═══════ HEADER ═══════ -->
+    <header class="site-header" id="site-header">
+        <div class="header-container">
+            <a href="https://reviewflowai.in/" class="brand-link">
+                <img src="https://reviewflowai.in/uploads/img/Review%20Flow%20AI%20Logo.png" alt="ReviewFlow AI Logo">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://reviewflowai.in/features/" class="">Features</a></li>
+                    <li><a href="https://reviewflowai.in/business-analyzer/" class="">AI Analyzer</a></li>
+                    <li><a href="https://reviewflowai.in/how-it-works/" class="">How It Works</a></li>
+                    <li><a href="https://reviewflowai.in/pricing/" class="">Pricing</a></li>
+                    <li><a href="https://reviewflowai.in/agency-plan/" class="">Agency</a></li>
+                    <li><a href="https://reviewflowai.in/contact/" class="">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Desktop CTAs (hidden on mobile) -->
+            <div class="header-ctas" style="display: flex; align-items: center; gap: 0.75rem;">
+                <a href="https://reviewflowai.in/index.php?route=login" class="btn btn-secondary desktop-cta">
+                    Sign In
+                </a>
+                <a href="https://reviewflowai.in/register/" class="btn btn-primary desktop-cta">
+                    Start Free
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+            </div>
+
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════ MOBILE MENU OVERLAY ═══════ -->
+    <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+    <!-- ═══════ MOBILE MENU PANEL ═══════ -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="https://reviewflowai.in/features/" class="" onclick="closeMobileMenu()">Features</a></li>
+            <li><a href="https://reviewflowai.in/business-analyzer/" class="" onclick="closeMobileMenu()">AI Analyzer</a></li>
+            <li><a href="https://reviewflowai.in/how-it-works/" class="" onclick="closeMobileMenu()">How It Works</a></li>
+            <li><a href="https://reviewflowai.in/pricing/" class="" onclick="closeMobileMenu()">Pricing</a></li>
+            <li><a href="https://reviewflowai.in/agency-plan/" class="" onclick="closeMobileMenu()">Agency</a></li>
+            <li><a href="https://reviewflowai.in/contact/" class="" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+
+        <div class="mobile-divider"></div>
+
+        <div class="mobile-cta" style="display: flex; gap: 0.5rem; justify-content: center; padding: 0 1rem;">
+            <a href="https://reviewflowai.in/index.php?route=login" class="btn btn-secondary" style="flex: 1; text-align: center; justify-content: center;" onclick="closeMobileMenu()">Sign In</a>
+            <a href="https://reviewflowai.in/register/" class="btn btn-primary" style="flex: 1; text-align: center; justify-content: center;" onclick="closeMobileMenu()">Start Free</a>
+        </div>
+    </div>
+
+    <script>
+        // ── MOBILE MENU TOGGLE ──
+        const hamburger = document.getElementById('hamburger-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+        const body = document.body;
+
+        function openMobileMenu() {
+            hamburger.classList.add('active');
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            hamburger.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.contains('active') ? closeMobileMenu() : openMobileMenu();
+        });
+
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('active')) closeMobileMenu();
+        });
+
+        // ── HEADER SCROLL EFFECT ──
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('site-header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // ── HIDE DESKTOP CTAs ON MOBILE ──
+        function handleResponsiveCTAs() {
+            const desktopCtas = document.querySelectorAll('.desktop-cta');
+            const isMobile = window.innerWidth <= 900;
+            desktopCtas.forEach(btn => {
+                btn.style.display = isMobile ? 'none' : 'inline-flex';
+            });
+        }
+
+        window.addEventListener('resize', handleResponsiveCTAs);
+        handleResponsiveCTAs();
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="index.css">
+
+<!-- ═══════ HERO ═══════ -->
+<section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-glow"></div>
+    <div class="hero-inner">
+        <div class="hero-eyebrow reveal"><i class="fa-solid fa-robot"></i> AI-Powered Google Review Growth System</div>
+        <h1 class="reveal">Turn Happy Customers Into<br><span>5-Star Google Reviews</span></h1>
+        <p class="hero-desc reveal">Guide happy customers to draft natural, emoji-rich reviews at checkout in seconds. Built-in negative feedback filter protects your Google profile automatically.</p>
+        <div class="hero-ctas reveal">
+            <a href="https://reviewflowai.in/register/" class="btn btn-primary btn-lg"><i class="fa-solid fa-rocket"></i> Launch My Business Free</a>
+            <a href="#demo-video" class="btn btn-secondary btn-lg"><i class="fa-solid fa-play"></i> See How It Works</a>
+        </div>
+        <p class="hero-note reveal"><i class="fa-solid fa-circle-check"></i> No credit card required · <i class="fa-solid fa-circle-check"></i> Setup in 5 minutes · <i class="fa-solid fa-circle-check"></i> Cancel anytime</p>
+        <div class="hero-pills reveal">
+            <div class="review-pill">
+                <div class="review-pill-avatar" style="background:#4285F4;">RK</div>
+                <div class="review-pill-stars">★★★★★</div>
+                <div class="review-pill-text">Amazing service!</div>
+                <svg class="review-pill-g" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="review-pill">
+                <div class="review-pill-avatar" style="background:#34A853;">PM</div>
+                <div class="review-pill-stars">★★★★★</div>
+                <div class="review-pill-text">Highly recommend!</div>
+                <svg class="review-pill-g" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+            <div class="review-pill">
+                <div class="review-pill-avatar" style="background:#EA4335;">AS</div>
+                <div class="review-pill-stars">★★★★★</div>
+                <div class="review-pill-text">Best in the area 😍</div>
+                <svg class="review-pill-g" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+        </div>
+        <div class="hero-video reveal" id="demo-video">
+            <div class="hero-video-inner">
+                <iframe src="https://www.youtube.com/embed/OF21_Ib16eU?rel=0&modestbranding=1" title="ReviewFlow AI Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ TRUST BAR ═══════ -->
+<section class="trust-bar">
+    <div class="trust-bar-inner">
+        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Human-Like AI Review Drafts</div>
+        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> No Technical Setup Required</div>
+        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Instant Dashboard Sync</div>
+        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Negative Feedback Filter</div>
+        <div class="trust-item"><i class="fa-solid fa-circle-check"></i> Print-Ready QR Flyers</div>
+    </div>
+</section>
+
+<!-- ═══════ FEATURES ═══════ -->
+<section class="features" id="features">
+    <div class="section-header">
+        <span class="section-badge"><span class="section-badge-dot"></span> Platform Features</span>
+        <h2>Reputation Systems that <span>Generate Real Value</span></h2>
+        <p>Lower the friction for customers to leave reviews while giving operators complete control over customer sentiment.</p>
+    </div>
+    <div class="features-grid">
+        <div class="feature-card reveal">
+            <div class="feature-icon fi-green"><i class="fa-solid fa-filter"></i></div>
+            <h3>Smart Review Funnels</h3>
+            <p>Prevent negative comments before they reach your listings. Route dissatisfied customers to private feedback forms automatically.</p>
+            <a href="https://reviewflowai.in/register/" class="feature-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+            <div class="feature-icon fi-blue"><i class="fa-solid fa-print"></i></div>
+            <h3>Printed QR Flyers</h3>
+            <p>Generate customized, professional A6 flyer designs and table tent signs for checkout counters, tables, and receipts.</p>
+            <a href="https://reviewflowai.in/register/" class="feature-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+            <div class="feature-icon fi-purple"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Human-Like AI Review Assistant</h3>
+            <p>Provide customers with natural, emoji-rich review drafts that mimic real experiences for better Google rankings.</p>
+            <a href="https://reviewflowai.in/register/" class="feature-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+            <div class="feature-icon fi-amber"><i class="fa-solid fa-reply"></i></div>
+            <h3>AI Suggested Replies</h3>
+            <p>Draft personalized, contextually appropriate responses instantly to improve local engagement and show customers you care.</p>
+            <a href="https://reviewflowai.in/register/" class="feature-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+            <div class="feature-icon fi-cyan"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Reputation Analytics</h3>
+            <p>Track monthly scan volumes, click redirections, feedback logs, and listing performance trends in one unified dashboard.</p>
+            <a href="https://reviewflowai.in/register/" class="feature-link">Learn more <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="feature-card reveal reveal-delay-5">
+            <div class="feature-icon fi-rose"><i class="fa-solid fa-stethoscope"></i></div>
+            <h3>AI SEO Analyzer</h3>
+            <p>Instant 20+ point SEO diagnostic audit for your Google Business Profile with a 0–100 Health Score and actionable local ranking recommendations.</p>
+            <a href="https://reviewflowai.in/business-analyzer/" class="feature-link">Explore AI Analyzer <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ AI ANALYZER SHOWCASE ═══════ -->
+<section class="analyzer-showcase">
+    <div class="analyzer-card reveal">
+        <div>
+            <span class="analyzer-badge">New Diagnostic Tool</span>
+            <h2>Diagnose & Scale Your Google Maps Rankings</h2>
+            <p>Our AI SEO Analyzer runs automated 20-point diagnostic scans to detect missing categories, review sentiment gaps, NAP inconsistencies, and technical schema errors.</p>
+            <a href="https://reviewflowai.in/business-analyzer/" class="btn btn-white"><i class="fa-solid fa-stethoscope"></i> Explore AI SEO Analyzer</a>
+        </div>
+        <div class="analyzer-stat">
+            <div class="analyzer-circle">
+                <span class="analyzer-circle-score">94%</span>
+                <span class="analyzer-circle-label">Health Score</span>
+            </div>
+            <h4>Instant GMB Audit & Report</h4>
+            <p>Automated checks across 6 core SEO dimensions</p>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ HOW IT WORKS ═══════ -->
+<section class="how" id="how-it-works">
+    <div class="how-inner">
+        <div class="section-header">
+            <span class="section-badge"><span class="section-badge-dot"></span> How It Works</span>
+            <h2>Four Steps to <span>Google Prominence</span></h2>
+            <p>A simple, automated feedback loop that captures and publishes customer reviews on autopilot.</p>
+        </div>
+        <div class="how-steps">
+            <div class="how-step reveal"><span class="how-step-num">1</span><h3>Connect Your Location</h3><p>Onboard your business listing in seconds using our real-time Google search interface.</p></div>
+            <div class="how-step reveal reveal-delay-1"><span class="how-step-num">2</span><h3>Deploy QR Flyers</h3><p>Print customized A6 flyer table tents or place QR links on receipts and signage.</p></div>
+            <div class="how-step reveal reveal-delay-2"><span class="how-step-num">3</span><h3>Filter Customer Sentiment</h3><p>Happy users route to Google; low ratings route to private feedback logs automatically.</p></div>
+            <div class="how-step reveal reveal-delay-3"><span class="how-step-num">4</span><h3>Publish Authentic Reviews</h3><p>Happy customers copy natural AI drafts and paste them directly onto your Google profile.</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ INDUSTRIES ═══════ -->
+<section class="industries">
+    <div class="section-header">
+        <span class="section-badge"><span class="section-badge-dot"></span> Works For Every Business</span>
+        <h2>Built for <span>All Local Industries</span></h2>
+        <p>Whether you run a restaurant, clinic, salon, or retail store — ReviewFlow AI adapts to your business type.</p>
+    </div>
+    <div class="industries-grid">
+        <div class="industry-card reveal"><i class="fa-solid fa-utensils"></i><span>Restaurants</span></div>
+        <div class="industry-card reveal reveal-delay-1"><i class="fa-solid fa-scissors"></i><span>Salons & Spas</span></div>
+        <div class="industry-card reveal reveal-delay-2"><i class="fa-solid fa-stethoscope"></i><span>Clinics</span></div>
+        <div class="industry-card reveal reveal-delay-3"><i class="fa-solid fa-shirt"></i><span>Retail Stores</span></div>
+        <div class="industry-card reveal reveal-delay-4"><i class="fa-solid fa-hotel"></i><span>Hotels</span></div>
+        <div class="industry-card reveal reveal-delay-5"><i class="fa-solid fa-car-side"></i><span>Auto Services</span></div>
+    </div>
+</section>
+
+<!-- ═══════ SHOWCASE TABS ═══════ -->
+<section class="showcase">
+    <div class="showcase-inner">
+        <div class="section-header">
+            <span class="section-badge"><span class="section-badge-dot"></span> Console Showcase</span>
+            <h2>Explore Your <span>Reputation Hub</span></h2>
+            <p>A centralized workspace to simplify listing management, flyer generation, and reviews monitoring.</p>
+        </div>
+        <div class="showcase-tabs">
+            <button class="showcase-tab active" onclick="switchTab(event,'sc-analytics')"><i class="fa-solid fa-chart-bar"></i> Performance Analytics</button>
+            <button class="showcase-tab" onclick="switchTab(event,'sc-reviews')"><i class="fa-solid fa-inbox"></i> Reviews Inbox</button>
+            <button class="showcase-tab" onclick="switchTab(event,'sc-qr')"><i class="fa-solid fa-qrcode"></i> QR Flyer Customizer</button>
+            <button class="showcase-tab" onclick="switchTab(event,'sc-ai')"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Draft Assistant</button>
+        </div>
+        <div class="showcase-content">
+            <div class="showcase-panel active" id="sc-analytics">
+                <div class="showcase-text">
+                    <h3>Real-Time Funnel Analytics</h3>
+                    <p>Track metrics like scan frequency, redirection rates, and conversion percentages to optimize your review funnel performance.</p>
+                    <ul class="showcase-bullets">
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Track conversion rates by week or month</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Access customer sentiment and trend breakdowns</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Monitor listing rating history automatically</li>
+                    </ul>
+                    <a href="https://reviewflowai.in/register/" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="showcase-preview">
+                    <div style="background:#fff;border-radius:10px;border:1px solid var(--gray-200);padding:1rem;">
+                        <div style="display:flex;justify-content:space-between;font-size:0.72rem;font-weight:700;margin-bottom:0.6rem;">
+                            <span><i class="fa-solid fa-chart-column" style="color:var(--green-500);"></i> Funnel Clicks</span>
+                            <span style="color:var(--green-500);"><i class="fa-solid fa-arrow-trend-up"></i> +24%</span>
+                        </div>
+                        <div style="height:90px;display:flex;align-items:flex-end;gap:8px;border-bottom:1px solid var(--gray-100);padding-bottom:4px;">
+                            <div style="flex:1;height:38%;background:var(--green-100);border-radius:4px 4px 0 0;"></div>
+                            <div style="flex:1;height:52%;background:var(--green-100);border-radius:4px 4px 0 0;"></div>
+                            <div style="flex:1;height:45%;background:var(--green-100);border-radius:4px 4px 0 0;"></div>
+                            <div style="flex:1;height:70%;background:var(--green-200);border-radius:4px 4px 0 0;"></div>
+                            <div style="flex:1;height:82%;background:var(--green-500);border-radius:4px 4px 0 0;"></div>
+                            <div style="flex:1;height:95%;background:linear-gradient(135deg,#34A853,#2D9248);border-radius:4px 4px 0 0;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-panel" id="sc-reviews">
+                <div class="showcase-text">
+                    <h3>Centralized Reviews Inbox</h3>
+                    <p>Track all customer feedback, reply using AI suggestions, and view private offline feedback in one unified inbox.</p>
+                    <ul class="showcase-bullets">
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Sync reviews automatically from your listing</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Submit replies directly to Google with one click</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Monitor private inquiries offline</li>
+                    </ul>
+                    <a href="https://reviewflowai.in/register/" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="showcase-preview">
+                    <div style="background:#fff;border-radius:10px;border:1px solid var(--gray-200);padding:0.85rem;">
+                        <div style="display:flex;gap:0.5rem;align-items:center;margin-bottom:0.5rem;">
+                            <div style="width:26px;height:26px;border-radius:50%;background:var(--green-500);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.6rem;font-weight:800;">JD</div>
+                            <div style="flex:1;"><strong style="font-size:0.7rem;">John Doe</strong><br><span style="font-size:0.56rem;color:var(--gray-400);">2 hours ago</span></div>
+                        </div>
+                        <div style="color:var(--amber-400);font-size:0.7rem;">★★★★★</div>
+                        <p style="font-size:0.68rem;color:var(--gray-500);margin-bottom:0.5rem;">"Excellent service, highly recommended!"</p>
+                        <div style="background:var(--green-50);border:1px solid var(--green-200);border-radius:8px;padding:0.6rem;">
+                            <span style="font-size:0.56rem;font-weight:800;color:var(--green-700);"><i class="fa-solid fa-wand-magic-sparkles"></i> Suggested Response:</span>
+                            <p style="font-size:0.6rem;color:var(--gray-600);margin:0;">"Hi John, thank you for the 5-star review! We're delighted..."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-panel" id="sc-qr">
+                <div class="showcase-text">
+                    <h3>QR Flyer Customization Panel</h3>
+                    <p>Customize flyer colors to match your brand. Choose print-ready A6 templates or table tents for your locations.</p>
+                    <ul class="showcase-bullets">
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Real-time color matching options</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Download high-resolution PDFs</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Branded watermarks for displays</li>
+                    </ul>
+                    <a href="https://reviewflowai.in/register/" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="showcase-preview" style="display:flex;justify-content:center;">
+                    <div style="width:130px;background:#fff;border:2px solid var(--green-500);border-radius:12px;padding:1rem;text-align:center;">
+                        <div style="font-size:0.5rem;font-weight:800;color:var(--gray-500);text-transform:uppercase;margin-bottom:0.3rem;">Rate Us on</div>
+                        <svg width="50" height="16" viewBox="0 0 74 24" style="margin-bottom:0.4rem;"><text y="18" font-family="Arial" font-size="18" font-weight="700" fill="#4285F4">G</text><text x="12" y="18" font-family="Arial" font-size="18" font-weight="700" fill="#EA4335">o</text><text x="24" y="18" font-family="Arial" font-size="18" font-weight="700" fill="#FBBC05">o</text><text x="36" y="18" font-family="Arial" font-size="18" font-weight="700" fill="#4285F4">g</text><text x="48" y="18" font-family="Arial" font-size="18" font-weight="700" fill="#34A853">l</text><text x="56" y="18" font-family="Arial" font-size="18" font-weight="700" fill="#EA4335">e</text></svg>
+                        <div style="width:70px;height:70px;background:var(--gray-100);border-radius:6px;margin:0 auto 0.4rem;display:flex;align-items:center;justify-content:center;"><i class="fa-solid fa-qrcode" style="font-size:1.6rem;color:var(--gray-700);"></i></div>
+                        <div style="font-size:0.42rem;font-weight:700;color:var(--green-700);">Scan to leave feedback</div>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-panel" id="sc-ai">
+                <div class="showcase-text">
+                    <h3>AI Review Generation Drafts</h3>
+                    <p>Lower the friction of leaving reviews. Provide customers with pre-written drafts incorporating industry keywords and emojis.</p>
+                    <ul class="showcase-bullets">
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Five structured draft options per visit</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Copy-paste optimized for mobile</li>
+                        <li class="showcase-bullet"><i class="fa-solid fa-circle-check"></i> Human-like phrasing with natural emojis</li>
+                    </ul>
+                    <a href="https://reviewflowai.in/register/" class="btn btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="showcase-preview">
+                    <div style="display:flex;flex-direction:column;gap:0.5rem;">
+                        <div style="background:#fff;border:1px solid var(--gray-200);padding:0.75rem;border-radius:8px;">
+                            <span style="font-size:0.55rem;color:var(--green-700);font-weight:800;"><i class="fa-solid fa-wand-magic-sparkles"></i> Draft Option 1</span>
+                            <p style="font-size:0.68rem;color:var(--gray-700);font-style:italic;margin:0.25rem 0 0;">"Extremely helpful staff! They answered all my questions and the service was quick. 😊 Highly recommend!"</p>
+                        </div>
+                        <div style="background:var(--green-50);border:1px solid var(--green-200);padding:0.75rem;border-radius:8px;">
+                            <span style="font-size:0.55rem;color:var(--green-700);font-weight:800;"><i class="fa-solid fa-wand-magic-sparkles"></i> Draft Option 2</span>
+                            <p style="font-size:0.68rem;color:var(--gray-700);font-style:italic;margin:0.25rem 0 0;">"Great experience overall — very clean, professional and the team really made me feel welcome. ⭐⭐⭐⭐⭐"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ STATS ═══════ -->
+<section class="stats-strip">
+    <div class="stats-strip-inner">
+        <div class="stat-item reveal"><div class="stat-value">84.6%</div><div class="stat-label">Avg. Conversion Rate</div></div>
+        <div class="stat-item reveal reveal-delay-1"><div class="stat-value">1,200+</div><div class="stat-label">Active Businesses</div></div>
+        <div class="stat-item reveal reveal-delay-2"><div class="stat-value">5★</div><div class="stat-label">Average Google Rating</div></div>
+        <div class="stat-item reveal reveal-delay-3"><div class="stat-value">&lt;5 min</div><div class="stat-label">Setup Time</div></div>
+    </div>
+</section>
+
+<!-- ═══════ PRICING ═══════ -->
+<section class="pricing" id="pricing">
+    <div class="section-header">
+        <span class="section-badge"><span class="section-badge-dot"></span> Pricing</span>
+        <h2>Simple, Transparent <span>Plans</span></h2>
+        <p>Choose a plan that fits your business needs, from basic funnels to full multi-location analytics.</p>
+    </div>
+    <div class="pricing-grid">
+        <div class="pricing-card reveal">
+            <div class="pricing-card-header">
+                <div class="pricing-plan-name">Monthly Plan</div>
+                <div class="pricing-plan-desc">Core reputation automation billed monthly. First Month Free!</div>
+            </div>
+            <div class="pricing-price"><span class="pricing-amount">₹199</span><span class="pricing-period">/month</span></div>
+            <ul class="pricing-features">
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> 1 Business Location</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> AI Magic QR Flyer</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> AI Review Generations</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Auto Review Replies</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Advanced Analytics Dashboard</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> AI SEO Analyzer</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> 4 Competitor Analyses</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Keyword Tracker (5 entries)</li>
+            </ul>
+            <a href="index.php?route=register&plan=Starter" class="btn btn-secondary btn-block">Select Plan <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="pricing-card popular reveal reveal-delay-1">
+            <div class="pricing-card-header">
+                <div class="pricing-plan-name">Yearly Plan</div>
+                <div class="pricing-plan-desc">Complete reputation automation for single locations. Save big!</div>
+            </div>
+            <div class="pricing-price"><span class="pricing-amount">₹999</span><span class="pricing-period">/year</span></div>
+            <ul class="pricing-features">
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> 1 Business Location</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> AI Magic QR Flyer</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> AI Review Generations</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Auto Review Replies</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Advanced Analytics Dashboard</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> AI SEO Analyzer</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> 4 Competitor Analyses</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Keyword Tracker (5 entries)</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Priority Email Support</li>
+            </ul>
+            <a href="index.php?route=register&plan=Individual" class="btn btn-primary btn-block">Select Plan <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="pricing-card reveal reveal-delay-2">
+            <div class="pricing-card-header">
+                <div class="pricing-plan-name">Agency Plan</div>
+                <div class="pricing-plan-desc">Scale your marketing business with white-label.</div>
+            </div>
+            <div class="pricing-price"><span class="pricing-currency">₹</span><span class="pricing-amount">4999</span><span class="pricing-period">/year</span></div>
+            <ul class="pricing-features">
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Up to 100 Business Locations</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> White-Label Agency Dashboard</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Custom QR flyer configuration</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Integrate Own AI Keys</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Cross-Business Analytics</li>
+                <li class="pricing-feature"><i class="fa-solid fa-circle-check"></i> Priority Email Support</li>
+            </ul>
+            <a href="index.php?route=agency/register" class="btn btn-secondary btn-block">Become An Agency <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ TESTIMONIALS ═══════ -->
+<section class="testimonials">
+    <div class="testimonials-inner">
+        <div class="section-header">
+            <span class="section-badge"><span class="section-badge-dot"></span> Customer Stories</span>
+            <h2>Trusted by <span>Local Businesses</span></h2>
+            <p>See how ReviewFlow AI is helping businesses across India grow their Google ratings and online visibility.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal">
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="testimonial-text">"Within the first month, our Google review count jumped from 18 to 67. The QR flyer system is incredibly easy — customers actually use it at checkout!"</div>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar" style="background:#4285F4;">RK</div>
+                    <div><div class="testimonial-name">Rajesh Kumar</div><div class="testimonial-role">Restaurant Owner, Delhi</div></div>
+                    <div class="testimonial-google"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal reveal-delay-1">
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="testimonial-text">"The negative feedback filter alone is worth it. We used to get occasional bad reviews — now unhappy customers go through the private form and we resolve issues before they go public."</div>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar" style="background:#34A853;">PM</div>
+                    <div><div class="testimonial-name">Priya Mehta</div><div class="testimonial-role">Salon Owner, Mumbai</div></div>
+                    <div class="testimonial-google"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal reveal-delay-2">
+                <div class="testimonial-stars">★★★★★</div>
+                <div class="testimonial-text">"Setup took literally 4 minutes. The AI-generated drafts are so natural — customers actually copy and post them. Our rating went from 3.8 to 4.6 in just 6 weeks."</div>
+                <div class="testimonial-author">
+                    <div class="testimonial-avatar" style="background:#EA4335;">AS</div>
+                    <div><div class="testimonial-name">Arun Sharma</div><div class="testimonial-role">Clinic Manager, Bangalore</div></div>
+                    <div class="testimonial-google"><svg width="12" height="12" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg> Google</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ FAQ ═══════ -->
+<section class="faq" id="faq">
+    <div class="faq-inner">
+        <div class="section-header">
+            <span class="section-badge"><span class="section-badge-dot"></span> Help Center</span>
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <p>Answers to common questions about setting up your ReviewFlow AI review funnel.</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item reveal">
+                <button class="faq-trigger" onclick="toggleFaq(this)"><span><i class="fa-regular fa-circle-question" style="color:var(--green-500);margin-right:0.5rem;"></i>How does ReviewFlow AI work?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                <div class="faq-content"><p>ReviewFlow AI provides your business with a customized review funnel and QR code. Happy customers get AI-generated draft reviews to post on Google, while unhappy customers are routed to a private feedback form to resolve issues offline.</p></div>
+            </div>
+            <div class="faq-item reveal reveal-delay-1">
+                <button class="faq-trigger" onclick="toggleFaq(this)"><span><i class="fa-regular fa-circle-question" style="color:var(--green-500);margin-right:0.5rem;"></i>Can I customize my QR flyer designs?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                <div class="faq-content"><p>Yes. The flyer customizer allows you to change color themes, upload custom logos, configure rating incentives, and download templates as print-ready PDFs.</p></div>
+            </div>
+            <div class="faq-item reveal reveal-delay-2">
+                <button class="faq-trigger" onclick="toggleFaq(this)"><span><i class="fa-regular fa-circle-question" style="color:var(--green-500);margin-right:0.5rem;"></i>Can AI generate replies to reviews?</span><span class="faq-icon"><i class="fa-solid fa-plus"></i></span></button>
+                <div class="faq-content"><p>Yes. When you receive a review, our AI drafts a professional, context-appropriate reply you can publish directly from your dashboard.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ CTA ═══════ -->
+<section class="cta">
+    <div class="cta-card">
+        <div class="cta-card-inner">
+            <div class="cta-badge"><i class="fa-solid fa-rocket"></i> Get Started Today</div>
+            <h2>Start Growing More Reviews Today</h2>
+            <p>Set up your customized review funnel in under five minutes. No credit card required.</p>
+            <div class="cta-buttons">
+                <a href="https://reviewflowai.in/register/" class="btn btn-white btn-lg"><i class="fa-solid fa-rocket"></i> Get Started Free</a>
+                <a href="#demo-video" class="btn btn-ghost-white btn-lg"><i class="fa-solid fa-play"></i> See How It Works</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function switchTab(event, panelId) {
+    document.querySelectorAll('.showcase-tab').forEach(t => t.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    document.querySelectorAll('.showcase-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById(panelId).classList.add('active');
+}
+
+function toggleFaq(btn) {
+    const item = btn.parentElement, content = btn.nextElementSibling;
+    const isActive = item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(el => { el.classList.remove('active'); el.querySelector('.faq-content').style.maxHeight = null; });
+    if (!isActive) { item.classList.add('active'); content.style.maxHeight = content.scrollHeight + 'px'; }
+}
+
+(function() {
+    const els = document.querySelectorAll('.reveal');
+    if (!window.IntersectionObserver) { els.forEach(el => el.classList.add('visible')); return; }
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => observer.observe(el));
+})();
+</script>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="site-footer">
+        <link rel="stylesheet" href="index.css">
+
+        <div class="footer-container">
+            <!-- Brand Column -->
+            <div class="footer-brand">
+                <a href="https://reviewflowai.in/" class="brand-link">
+                    <div class="footer-brand-icon">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <span class="footer-brand-text">ReviewFlow <span>AI</span></span>
+                </a>
+                <p class="footer-brand-tagline">AI-Powered Google Review Growth System — helping businesses collect more reviews, respond professionally, and grow their online reputation.</p>
+                
+                <a href="https://webpresshub.net/" target="_blank" rel="noopener" class="footer-powered">
+                    Powered by <span>WebPressHub</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-nav-col">
+                <h4>Company</h4>
+                <ul class="footer-nav-links">
+                    <li><a href="https://reviewflowai.in/about/">About Us</a></li>
+                    <li><a href="https://reviewflowai.in/contact/">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Product -->
+            <div class="footer-nav-col">
+                <h4>Product</h4>
+                <ul class="footer-nav-links">
+                    <li><a href="https://reviewflowai.in/features/">Features</a></li>
+                    <li><a href="https://reviewflowai.in/business-analyzer/">AI SEO Analyzer</a></li>
+                    <li><a href="https://reviewflowai.in/pricing/">Pricing</a></li>
+                    <li><a href="https://reviewflowai.in/how-it-works/">How It Works</a></li>
+                    <li><a href="https://reviewflowai.in/agency-plan/">Agency Plan</a></li>
+                </ul>
+            </div>
+            
+            <!-- Resources -->
+            <div class="footer-nav-col">
+                <h4>Resources</h4>
+                <ul class="footer-nav-links">
+                    <li><a href="https://reviewflowai.in/faq/">FAQs</a></li>
+                    <li><a href="https://reviewflowai.in/sitemap/">Sitemap</a></li>
+                    <li><a href="https://reviewflowai.in/login/">Sign In</a></li>
+                    <li><a href="https://reviewflowai.in/register/">Register</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p class="footer-copyright">
+                <span class="footer-copyright-dot"></span>
+                &copy; 2026 ReviewFlow AI. All rights reserved.
+            </p>
+            <div class="footer-legal-links">
+                <a href="https://reviewflowai.in/privacy-policy/">Privacy Policy</a>
+                <span class="footer-legal-sep"></span>
+                <a href="https://reviewflowai.in/terms-of-service/">Terms of Service</a>
+                <span class="footer-legal-sep"></span>
+                <a href="https://reviewflowai.in/cookie-policy/">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════ HEADER SCROLL SCRIPT ═══════ -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('site-header');
+            if (header) {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+        });
+    </script>
+    
+    <!-- WhatsApp Support Widget -->
+                <script>
+                window.WA_CONFIG = {
+                    number: "919707842047",
+                    message: "Hi! I need help with ReviewFlow AI.",
+                    enabled: true
+                };
+            </script>
+            <script src="https://reviewflowai.in/assets/js/whatsapp-widget.js"></script>
+        
+    <!-- Admin Upgrade Features -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Inject Admin Dashboard Button to the bottom right
+            const adminBtn = document.createElement('a');
+            adminBtn.href = 'admin.html';
+            adminBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Admin';
+            adminBtn.style.cssText = 'position: fixed; bottom: 20px; right: 20px; background: var(--gray-900); color: white; padding: 10px 20px; border-radius: 50px; font-weight: bold; text-decoration: none; z-index: 9999; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-size: 0.85rem; display: flex; align-items: center; gap: 8px; font-family: "Plus Jakarta Sans", sans-serif; transition: all 0.2s ease;';
+            
+            adminBtn.onmouseover = () => { adminBtn.style.transform = 'translateY(-2px)'; };
+            adminBtn.onmouseout = () => { adminBtn.style.transform = 'translateY(0)'; };
+            
+            document.body.appendChild(adminBtn);
+
+            // 2. Add Inline Editing (CMS Mode) toggle button
+            const cmsBtn = document.createElement('button');
+            cmsBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i> Edit Mode';
+            cmsBtn.style.cssText = 'position: fixed; bottom: 70px; right: 20px; background: var(--green-600); color: white; padding: 10px 20px; border-radius: 50px; border: none; cursor: pointer; font-weight: bold; z-index: 9999; box-shadow: 0 4px 12px rgba(52,168,83,0.3); font-size: 0.85rem; display: flex; align-items: center; gap: 8px; font-family: "Plus Jakarta Sans", sans-serif; transition: all 0.2s ease;';
+            
+            cmsBtn.onmouseover = () => { cmsBtn.style.transform = 'translateY(-2px)'; };
+            cmsBtn.onmouseout = () => { cmsBtn.style.transform = 'translateY(0)'; };
+
+            let editMode = false;
+            cmsBtn.onclick = () => {
+                editMode = !editMode;
+                const textElements = document.querySelectorAll('h1, h2, h3, p, span');
+                
+                if (editMode) {
+                    cmsBtn.innerHTML = '<i class="fa-solid fa-check"></i> Save Changes';
+                    cmsBtn.style.background = '#F59E0B'; // Amber
+                    textElements.forEach(el => {
+                        el.contentEditable = "true";
+                        el.style.border = "1px dashed var(--green-400)";
+                        el.style.padding = "2px";
+                    });
+                } else {
+                    cmsBtn.innerHTML = '<i class="fa-solid fa-pen-to-square"></i> Edit Mode';
+                    cmsBtn.style.background = 'var(--green-600)';
+                    textElements.forEach(el => {
+                        el.contentEditable = "false";
+                        el.style.border = "none";
+                        el.style.padding = "0";
+                    });
+                    // Simulate saving to DB
+                    alert('Changes saved successfully to database!');
+                }
+            };
+            document.body.appendChild(cmsBtn);
+        });
+    </script>
+</body>
+
+</html>
